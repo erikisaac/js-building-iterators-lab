@@ -3,6 +3,14 @@
 function myMap(arr, callback) {
 
 //  CODE INSIDE HERE   //
+	console.log(myMap);
+	var newArray = [];
+
+	for (var i = 0; i < arr.length; i++) {
+		console.log('Yo, ' +i);
+		newArray.push(callback(arr[i]));
+		}
+		return newArray;
 
 }
 

@@ -3,7 +3,11 @@
 function myEach(arr, callback) {
 
 //  CODE INSIDE HERE   //
-
+	console.log(myEach);
+	for (i = 0; i < arr.length; i++) {
+		console.log('Hi, ' + i)
+		callback(arr[i], i, arr);
+	}
 }
 
 /*
